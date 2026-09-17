@@ -8,7 +8,7 @@ Objetivo: Medir latência do Handshake e inspecionar códigos de retorno do kern
 import socket
 import time
 
-def testar_porta(alvo: str, porta: int, timeout: float = 2.0) -> None:
+def testar_porta(alvo: str, porta: int, timeout: float = 0.5) -> None:
     """Mede a latência e o código de retorno da tentativa de conexão TCP."""
     
     # 1. Criação do socket IPv4 (AF_INET) e protocolo TCP (SOCK_STREAM)
